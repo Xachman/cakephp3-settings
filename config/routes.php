@@ -7,7 +7,9 @@ Router::plugin(
     'Settings',
     ['path' => '/settings'],
     function (RouteBuilder $routes) {
-        $routes->get('/settings', ['controller' => 'Settings', 'action' => 'index']);
+        $routes->get('/', ['controller' => 'Settings', 'action' => 'index']);
+        $routes->get('/edit', ['controller' => 'Settings', 'action' => 'edit']);
+        $routes->post('/edit', ['controller' => 'Settings', 'action' => 'edit']);
         $routes->fallbacks(DashedRoute::class);
     }
 );
