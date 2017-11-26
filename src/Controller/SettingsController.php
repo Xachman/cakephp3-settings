@@ -6,6 +6,7 @@
  */
 namespace Settings\Controller;
 use Settings\Controller\AppController;
+use Settings\Model\Settings;
 /**
  * Description of Invoices
  *

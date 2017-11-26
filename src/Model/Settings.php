@@ -31,7 +31,7 @@ class Settings {
     }
 
     public function get() {
-        $settings = new \App\Settings(file_get_contents($this->getFile()));
+        $settings = new \Settings\Settings(file_get_contents($this->getFile()));
         
         $settingsArray = [
             "business" => [
